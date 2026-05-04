@@ -70,6 +70,8 @@
                 required
                 minlength="2"
                 maxlength="200"
+                pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+$"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
              <span class="popup__error" id="user-description-error"></span>
             </label>
@@ -100,6 +102,7 @@
                 minlength="2"
                 maxlength="30"
                 pattern="[a-zA-Zа-яА-ЯёЁ\s\-]+$"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
                <span class="popup__error" id="place-name-error"></span>
             </label>
@@ -112,6 +115,7 @@
                 placeholder="Ссылка на картинку"
                 required
                 type="url"
+                data-error-message="Поле должно содержать ссылку"
               />
              <span class="popup__error" id="place-link-error"></span>
             </label>
@@ -163,6 +167,7 @@
                 placeholder="Ссылка на изображение"
                 required
                 type="url"
+                data-error-message="Поле должно содержать ссылку"
               />
               <span class="popup__error" id="user-avatar-error"></span>
             </label>
